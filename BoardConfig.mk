@@ -6,6 +6,9 @@ TARGET_BOARD_PLATFORM := qsd8k
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT := armv7-a
+ARCH_ARM_HAVE_TLS_REGISTER := true
+TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
+TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 
 TARGET_NO_BOOTLOADER := true
 
@@ -45,5 +48,6 @@ BOARD_USERDATAIMAGE_MAX_SIZE := $(call image-size-from-data-size,0x04ac0000)
 # The size of a block that can be marked bad.
 BOARD_FLASH_BLOCK_SIZE := 131072
 
+BOARD_KERNEL_BASE := 0x20000000
 USE_CAMERA_STUB := false
-BOARD_EGL_CFG := vendor/google/$(TARGET_PRODUCT)/egl.cfg
+BOARD_EGL_CFG := vendor/google/passion/egl.cfg
