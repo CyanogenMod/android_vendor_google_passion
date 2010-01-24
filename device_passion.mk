@@ -149,3 +149,6 @@ PRODUCT_LOCALES := en_US en_GB fr_FR it_IT de_DE es_ES
 # This is a high DPI device, so add the hdpi pseudo-locale
 PRODUCT_LOCALES += hdpi
 
+DEVICE_PACKAGE_OVERLAYS := vendor/google/passion/overlay
+
+
