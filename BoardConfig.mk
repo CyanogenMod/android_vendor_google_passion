@@ -30,7 +30,7 @@ BOARD_HAVE_BLUETOOTH_BCM := true
 
 TARGET_HARDWARE_3D := false
 
-BOARD_GPS_LIBRARIES := libgps librpc
+BOARD_GPS_LIBRARIES := libloc_api
 
 BOARD_VENDOR_USE_AKMD := true
 
