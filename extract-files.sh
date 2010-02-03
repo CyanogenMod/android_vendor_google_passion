@@ -25,6 +25,7 @@ adb pull /system/lib/libstagefrighthw.so proprietary/libstagefrighthw.so
 adb pull /system/lib/liboemcamera.so proprietary/liboemcamera.so
 adb pull /system/lib/libOmxCore.so proprietary/libOmxCore.so
 adb pull /system/lib/libgsl.so proprietary/libgsl.so
+adb pull /system/lib/libgps.so proprietary/libgps.so
 adb pull /system/lib/libopencorehw.so proprietary/libopencorehw.so
 adb pull /system/lib/libqcomm_omx.so proprietary/libqcomm_omx.so
 adb pull /system/lib/libspeech.so proprietary/libspeech.so
