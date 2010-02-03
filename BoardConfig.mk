@@ -21,7 +21,7 @@ WIFI_DRIVER_MODULE_PATH     := "/system/lib/modules/bcm4329.ko"
 WIFI_DRIVER_MODULE_ARG      := ""
 WIFI_DRIVER_MODULE_NAME     := "bcm4329"
 
-TARGET_BOOTLOADER_BOARD_NAME := mahimahi
+TARGET_BOOTLOADER_BOARD_NAME := nexusone
 
 BOARD_KERNEL_CMDLINE := no_console_suspend=1 console=null
 
