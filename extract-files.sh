@@ -2,8 +2,12 @@
 
 mkdir -p proprietary
 
-adb pull /system/bin/akmd proprietary/akmd
+mkdir -p ../../htc/common-open/akmd/proprietary
+adb pull /system/bin/akmd ../../htc/common-open/akmd/proprietary/akmd
+chmod 755 ../../htc/common-open/akmd/proprietary/akmd
+
 adb pull /system/bin/parse_radio_log proprietary/parse_radio_log
+chmod 755 proprietary/parse_radio_log
 
 adb pull /system/etc/firmware/yamato_pfp.fw proprietary/yamato_pfp.fw
 adb pull /system/etc/firmware/default.acdb proprietary/default.acdb
@@ -38,7 +42,4 @@ adb pull /system/lib/libcamera.so proprietary/libcamera.so
 adb pull /system/lib/hw/sensors.mahimahi.so proprietary/sensors.mahimahi.so
 adb pull /system/lib/hw/lights.mahimahi.so proprietary/lights.mahimahi.so
 adb pull /system/lib/libOmxVidEnc.so proprietary/libOmxVidEnc.so
-
-chmod 755 proprietary/akmd
-chmod 755 proprietary/parse_radio_log
 

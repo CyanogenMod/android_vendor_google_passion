@@ -228,13 +228,6 @@ LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
 OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
 include $(BUILD_PREBUILT)
 
-ifeq ($(BOARD_VENDOR_USE_AKMD),true)
-
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/proprietary/akmd:system/bin/akmd
-
-endif # ifeq ($(BOARD_VENDOR_USE_AKMD),true)
-
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/parse_radio_log:system/bin/parse_radio_log \
 	$(LOCAL_PATH)/proprietary/lights.mahimahi.so:system/lib/hw/lights.mahimahi.so \
