@@ -36,11 +36,6 @@ BOARD_VENDOR_USE_AKMD := true
 
 USE_PV_WINDOWS_MEDIA := false
 
-BOARD_USE_HTC_APPS := true
-
-BOARD_USE_HTC_LIBSENSORS := true
-BOARD_HTC_LIBSENSORS_NAME := sensors.mahimahi
-
 BOARD_BOOTIMAGE_MAX_SIZE := $(call image-size-from-data-size,0x00280000)
 BOARD_RECOVERYIMAGE_MAX_SIZE := $(call image-size-from-data-size,0x00500000)
 BOARD_SYSTEMIMAGE_MAX_SIZE := $(call image-size-from-data-size,0x04380000)
