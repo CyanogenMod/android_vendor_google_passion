@@ -18,7 +18,7 @@
 
 DEVICE_PACKAGE_OVERLAYS := vendor/google/passion/overlay
 
-ADDITIONAL_BUILD_PROPERTIES += \
+PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=Ring_Synth_04.ogg \
     ro.config.notification_sound=pixiedust.ogg \
     ro.config.alarm_alert=Alarm_Classic.ogg \
