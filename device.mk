@@ -28,6 +28,8 @@ PRODUCT_DEVICE := passion
 PRODUCT_MODEL := Nexus One
 PRODUCT_MANUFACTURER := HTC
 
+TARGET_PRODUCT := passion
+
 # Pick up some sounds
 include frameworks/base/data/sounds/AudioPackage4.mk
 
