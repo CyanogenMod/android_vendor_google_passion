@@ -40,6 +40,5 @@ adb pull /system/lib/libhtc_acoustic.so proprietary/libhtc_acoustic.so
 adb pull /system/lib/libhtc_ril.so proprietary/libhtc_ril.so
 adb pull /system/lib/libcamera.so proprietary/libcamera.so
 adb pull /system/lib/hw/sensors.mahimahi.so proprietary/sensors.mahimahi.so
-adb pull /system/lib/hw/lights.mahimahi.so proprietary/lights.mahimahi.so
 adb pull /system/lib/libOmxVidEnc.so proprietary/libOmxVidEnc.so
 
