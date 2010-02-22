@@ -15,7 +15,8 @@ PRODUCT_PACKAGES += \
     VisualizationWallpers \
     VoiceDialer \
     libRS \
-    librs_jni
+    librs_jni \
+	lights.mahimahi
 
 # How this product is called in the build system
 PRODUCT_NAME := passion
