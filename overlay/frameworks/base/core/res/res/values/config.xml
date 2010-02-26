@@ -177,15 +177,12 @@
 
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
-	<item>11</item>
-	<item>41</item>
-	<item>91</item>
-	<item>161</item>
-	<item>226</item>
-	<item>321</item>
-	<item>641</item>
-	<item>1281</item>
-	<item>2601</item>
+        <item>200</item>
+        <item>400</item>
+        <item>600</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
     </integer-array>
 
     <!-- Array of output values for LCD backlight corresponding to the LUX values
@@ -193,16 +190,12 @@
          than the size of the config_autoBrightnessLevels array.
          This must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-	<item>70</item>
-	<item>70</item>
-	<item>70</item>
-	<item>160</item>
-	<item>160</item>
-	<item>192</item>
-	<item>192</item>
-	<item>220</item>
-	<item>240</item>
-	<item>255</item>
+        <item>30</item>
+        <item>70</item>
+        <item>70</item>
+        <item>85</item>
+        <item>150</item>
+        <item>220</item>
     </integer-array>
 
     <!-- Array of output values for button backlight corresponding to the LUX values
@@ -212,14 +205,11 @@
     <integer-array name="config_autoBrightnessButtonBacklightValues">
         <item>255</item>
         <item>255</item>
-	<item>255</item>
+        <item>255</item>
         <item>0</item>
         <item>0</item>
         <item>0</item>
-	<item>0</item>
-	<item>0</item>
-	<item>0</item>
-	<item>0</item>
+        <item>0</item>
     </integer-array>
 
     <!-- Array of output values for keyboard backlight corresponding to the LUX values
@@ -227,9 +217,6 @@
          than the size of the config_autoBrightnessLevels array.
          This must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessKeyboardBacklightValues">
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
         <item>0</item>
         <item>0</item>
         <item>0</item>
