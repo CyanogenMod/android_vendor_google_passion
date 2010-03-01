@@ -18,5 +18,5 @@ wifi.supplicant_scan_interval=15
 ro.opengles.version = 131072
 
 # This is a high density device with more memory, so larger vm heaps for it.
-dalvik.vm.heapsize=24m
+dalvik.vm.heapsize=32m
 
