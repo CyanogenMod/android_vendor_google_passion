@@ -23,7 +23,7 @@ WIFI_DRIVER_MODULE_NAME     := "bcm4329"
 
 TARGET_BOOTLOADER_BOARD_NAME := nexusone
 
-BOARD_KERNEL_CMDLINE := no_console_suspend=1 console=null
+BOARD_KERNEL_CMDLINE := no_console_suspend=1 msmsdcc_sdioirq=1 wire.search_count=5
 
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
