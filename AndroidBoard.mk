@@ -19,11 +19,6 @@ ALL_PREBUILT += $(file)
 $(file) : $(LOCAL_PATH)/proprietary/libhtc_acoustic.so | $(ACP)
 	$(transform-prebuilt-to-target)
 
-file := $(TARGET_OUT_KEYCHARS)/mahimahi-keypad.kcm.bin
-ALL_PREBUILT += $(file)
-$(file) : $(LOCAL_PATH)/mahimahi-keypad.kcm.bin | $(ACP)
-	$(transform-prebuilt-to-target)
-
 file := $(TARGET_OUT_KEYLAYOUT)/mahimahi-keypad.kl
 ALL_PREBUILT += $(file)
 $(file) : $(LOCAL_PATH)/mahimahi-keypad.kl | $(ACP)
@@ -228,9 +223,12 @@ LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
 OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
 include $(BUILD_PREBUILT)
 
+include $(CLEAR_VARS)
+LOCAL_SRC_FILES := mahimahi-keypad.kcm
+include $(BUILD_KEY_CHAR_MAP)
+
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/parse_radio_log:system/bin/parse_radio_log \
-	$(LOCAL_PATH)/proprietary/sensors.mahimahi.so:system/lib/hw/sensors.mahimahi.so \
 	$(LOCAL_PATH)/proprietary/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \
 	$(LOCAL_PATH)/proprietary/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
 	$(LOCAL_PATH)/proprietary/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
