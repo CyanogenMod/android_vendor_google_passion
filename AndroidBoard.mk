@@ -229,7 +229,6 @@ include $(BUILD_KEY_CHAR_MAP)
 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/parse_radio_log:system/bin/parse_radio_log \
-	$(LOCAL_PATH)/proprietary/sensors.mahimahi.so:system/lib/hw/sensors.mahimahi.so \
 	$(LOCAL_PATH)/proprietary/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \
 	$(LOCAL_PATH)/proprietary/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
 	$(LOCAL_PATH)/proprietary/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
