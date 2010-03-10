@@ -19,11 +19,6 @@ ALL_PREBUILT += $(file)
 $(file) : $(LOCAL_PATH)/proprietary/libhtc_acoustic.so | $(ACP)
 	$(transform-prebuilt-to-target)
 
-file := $(TARGET_OUT_KEYCHARS)/mahimahi-keypad.kcm.bin
-ALL_PREBUILT += $(file)
-$(file) : $(LOCAL_PATH)/mahimahi-keypad.kcm.bin | $(ACP)
-	$(transform-prebuilt-to-target)
-
 file := $(TARGET_OUT_KEYLAYOUT)/mahimahi-keypad.kl
 ALL_PREBUILT += $(file)
 $(file) : $(LOCAL_PATH)/mahimahi-keypad.kl | $(ACP)
@@ -227,6 +222,10 @@ LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
 LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
 OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
 include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_SRC_FILES := mahimahi-keypad.kcm
+include $(BUILD_KEY_CHAR_MAP)
 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/parse_radio_log:system/bin/parse_radio_log \
