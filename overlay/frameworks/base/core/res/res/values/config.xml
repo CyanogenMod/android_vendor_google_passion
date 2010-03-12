@@ -32,13 +32,13 @@
     <bool name="config_sf_slowBlur">false</bool>
     
     <!-- The duration (in milliseconds) of a short animation. -->
-    <integer name="config_shortAnimTime">150</integer>
+    <integer name="config_shortAnimTime">100</integer>
     
     <!-- The duration (in milliseconds) of a medium-length animation. -->
-    <integer name="config_mediumAnimTime">300</integer>
+    <integer name="config_mediumAnimTime">250</integer>
     
     <!-- The duration (in milliseconds) of a long animation. -->
-    <integer name="config_longAnimTime">400</integer>
+    <integer name="config_longAnimTime">350</integer>
 
     <!-- The duration (in milliseconds) that the radio will scan for a signal
          when there's no network connection. If the scan doesn't timeout, use zero -->
