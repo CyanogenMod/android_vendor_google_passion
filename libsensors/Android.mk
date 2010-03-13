@@ -25,7 +25,7 @@ LOCAL_MODULE := sensors.mahimahi
 
 LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/hw
 
-LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_TAGS := eng user debug
 
 LOCAL_SRC_FILES := sensors.c
 LOCAL_SHARED_LIBRARIES := liblog libcutils

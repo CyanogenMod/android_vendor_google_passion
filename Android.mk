@@ -13,8 +13,8 @@
 # limitations under the License.
 
 LOCAL_PATH := $(my-dir)
-subdir_makefiles := \
-	$(LOCAL_PATH)/libsensors/Android.mk \
-	$(LOCAL_PATH)/liblights/Android.mk
 
-include $(subdir_makefiles)
+ifeq ($(TARGET_DEVICE),passion)
+  include $(all-subdir-makefiles)
+endif
+
