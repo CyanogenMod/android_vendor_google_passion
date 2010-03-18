@@ -14,6 +14,7 @@ adb pull /system/etc/firmware/default.acdb proprietary/default.acdb
 adb pull /system/etc/firmware/fw_bcm4329.bin proprietary/fw_bcm4329.bin
 adb pull /system/etc/firmware/yamato_pm4.fw proprietary/yamato_pm4.fw
 adb pull /system/etc/firmware/default_france.acdb proprietary/default_france.acdb
+adb pull /system/etc/firmware/default_att.acdb proprietary/default_att.acdb
 adb pull /system/etc/firmware/bcm4329.hcd proprietary/bcm4329.hcd
 adb pull /system/etc/01_qcomm_omx.cfg proprietary/01_qcomm_omx.cfg
 adb pull /system/etc/vpimg proprietary/vpimg
