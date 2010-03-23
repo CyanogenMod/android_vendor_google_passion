@@ -1,6 +1,6 @@
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_PREBUILT_KERNEL),)
+ifeq ($(TARGET_KERNEL_CONFIG),)
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
 endif
 
@@ -141,6 +141,7 @@ LOCAL_MODULE_PATH := $(local_target_dir)
 LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
 include $(BUILD_PREBUILT)
 
+ifeq ($(TARGET_KERNEL_CONFIG),)
 include $(CLEAR_VARS)
 LOCAL_MODULE := bcm4329.ko
 LOCAL_MODULE_TAGS := user
@@ -148,6 +149,7 @@ LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_OUT)/lib/modules
 LOCAL_SRC_FILES := $(LOCAL_MODULE)
 include $(BUILD_PREBUILT)
+endif
 
 # Qualcomm proprietary files
 include $(CLEAR_VARS)
