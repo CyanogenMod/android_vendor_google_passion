@@ -18,8 +18,10 @@
 
 DEVICE_PACKAGE_OVERLAYS := vendor/google/passion/overlay
 
+NO_DEFAULT_SOUNDS := true
+
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.ringtone=Ring_Synth_04.ogg \
+    ro.config.ringtone=DonMessWivIt.ogg \
     ro.config.notification_sound=pixiedust.ogg \
     ro.config.alarm_alert=Alarm_Classic.ogg \
     ro.com.android.wifi-watchlist=GoogleGuest \
@@ -28,7 +30,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dataroaming=false \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
-    ro.config.ringtone=CaribbeanIce.ogg \
     ro.com.google.clientidbase=android-google \
     keyguard.no_require_sim=true \
     ro.setupwizard.mode=OPTIONAL \
