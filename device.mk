@@ -16,8 +16,8 @@ PRODUCT_PACKAGES += \
     VoiceDialer \
     libRS \
     librs_jni \
-	lights.mahimahi \
-	sensors.mahimahi
+    lights.mahimahi \
+    sensors.mahimahi
 
 # How this product is called in the build system
 PRODUCT_NAME := passion
