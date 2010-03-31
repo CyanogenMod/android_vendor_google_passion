@@ -42,3 +42,10 @@ adb pull /system/lib/libhtc_ril.so proprietary/libhtc_ril.so
 adb pull /system/lib/libcamera.so proprietary/libcamera.so
 adb pull /system/lib/libOmxVidEnc.so proprietary/libOmxVidEnc.so
 
+adb pull /system/etc/pvasflocal.cfg proprietary/pvasflocal.cfg
+adb pull /system/lib/libomx_wmadec_sharedlibrary.so proprietary/libomx_wmadec_sharedlibrary.so
+adb pull /system/lib/libomx_wmvdec_sharedlibrary.so proprietary/libomx_wmvdec_sharedlibrary.so
+adb pull /system/lib/libpvasfcommon.so proprietary/libpvasfcommon.so
+adb pull /system/lib/libpvasflocalpbreg.so proprietary/libpvasflocalpbreg.so
+adb pull /system/lib/libpvasflocalpb.so proprietary/libpvasflocalpb.so
+

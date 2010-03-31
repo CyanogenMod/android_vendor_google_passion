@@ -73,8 +73,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.media.enc.aud.amrnb.bps=5525,12200 \
     ro.media.enc.aud.amrnb.hz=8000,8000 \
     ro.media.enc.aud.amrnb.ch=1,1 \
-    ro.media.dec.aud.wma.enabled=0 \
-    ro.media.dec.vid.wmv.enabled=0 \
     ro.media.cam.preview.fps=0 \
     ro.media.dec.jpeg.memcap=20000000 \
     ro.media.enc.jpeg.quality=90,80,70 \
@@ -84,3 +82,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     net.bt.name=Android \
     ro.config.sync=yes \
     dalvik.vm.stack-trace-file=/data/anr/traces.txt
+
+ifeq ($(WITH_WINDOWS_MEDIA),true)
+    PRODUCT_PROPERTY_OVERRIDES += \
+        ro.media.dec.aud.wma.enabled=1 \
+        ro.media.dec.vid.wmv.enabled=1
+else
+    PRODUCT_PROPERTY_OVERRIDES += \
+        ro.media.dec.aud.wma.enabled=0 \
+        ro.media.dec.vid.wmv.enabled=0
+endif
