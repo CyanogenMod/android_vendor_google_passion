@@ -9,42 +9,42 @@ endif # TARGET_KERNEL_CONFIG
 file := $(INSTALLED_KERNEL_TARGET)
 ALL_PREBUILT += $(file)
 $(file): $(TARGET_PREBUILT_KERNEL) | $(ACP)
-    $(transform-prebuilt-to-target)
+	$(transform-prebuilt-to-target)
 
 file := $(TARGET_OUT)/lib/libhtc_ril.so
 ALL_PREBUILT += $(file)
 $(file) : $(LOCAL_PATH)/proprietary/libhtc_ril.so | $(ACP)
-    $(transform-prebuilt-to-target)
+	$(transform-prebuilt-to-target)
 
 file := $(TARGET_OUT)/lib/libhtc_acoustic.so
 ALL_PREBUILT += $(file)
 $(file) : $(LOCAL_PATH)/proprietary/libhtc_acoustic.so | $(ACP)
-    $(transform-prebuilt-to-target)
+	$(transform-prebuilt-to-target)
 
 file := $(TARGET_OUT_KEYLAYOUT)/mahimahi-keypad.kl
 ALL_PREBUILT += $(file)
 $(file) : $(LOCAL_PATH)/mahimahi-keypad.kl | $(ACP)
-    $(transform-prebuilt-to-target)
+	$(transform-prebuilt-to-target)
 
 file := $(TARGET_OUT_KEYLAYOUT)/h2w_headset.kl
 ALL_PREBUILT += $(file)
 $(file) : $(LOCAL_PATH)/h2w_headset.kl | $(ACP)
-    $(transform-prebuilt-to-target)
+	$(transform-prebuilt-to-target)
     
 file := $(TARGET_RECOVERY_ROOT_OUT)/etc/fstab
 ALL_PREBUILT += $(file)
 $(file) : $(LOCAL_PATH)/fstab | $(ACP)
-    $(transform-prebuilt-to-target)
+	$(transform-prebuilt-to-target)
     
 file := $(TARGET_RECOVERY_ROOT_OUT)/system/etc/fstab
 ALL_PREBUILT += $(file)
 $(file) : $(LOCAL_PATH)/fstab | $(ACP)
-    $(transform-prebuilt-to-target)
+	$(transform-prebuilt-to-target)
 
 file := $(TARGET_ROOT_OUT)/init.mahimahi.rc
 ALL_PREBUILT += $(file)
 $(file) : $(LOCAL_PATH)/init.mahimahi.rc | $(ACP)
-    $(transform-prebuilt-to-target)
+	$(transform-prebuilt-to-target)
 
 # This will install the file in /system/etc
 #
