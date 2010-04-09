@@ -20,6 +20,10 @@ ro.opengles.version = 131072
 # This is a high density device with more memory, so larger vm heaps for it.
 dalvik.vm.heapsize=32m
 
-# GPRS class
+# RIL settings
 ro.ril.gprsclass=12
-
+ro.ril.hsxpa=2
+ro.ril.oem.ecclist=911,112,999,000,08,118,111,120,122,110,119,995,0800
+ro.ril.oem.nosim.ecclist=911,112,999,000,08,118,111,120,122,110,119,995,0800
+ro.ril.enable.managed.roaming=1
+ro.ril.emc.mode=2
