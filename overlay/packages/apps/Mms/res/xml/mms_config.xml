@@ -23,13 +23,13 @@
 
 <mms_config version="4">
     <!-- Maximum message size in bytes for a MMS message -->
-    <int name="maxMessageSize">1048576</int>
+    <int name="maxMessageSize">307200</int>
 
     <!-- Maximum height for an attached image -->
-    <int name="maxImageHeight">480</int>
+    <int name="maxImageHeight">1000</int>
 
     <!-- Maximum width for an attached image -->
-    <int name="maxImageWidth">640</int>
+    <int name="maxImageWidth">1296</int>
 
     <!-- UAProf URL -->
     <string name="uaProfUrl">http://www.htcmms.com.tw/Android/Common/nexusone/ua-profile.xml</string>
