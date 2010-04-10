@@ -21,4 +21,5 @@
     <bool name="def_screen_brightness_automatic_mode">true</bool>
     <bool name="def_backup_enabled">true</bool>
     <string name="def_backup_transport">com.google.android.backup/.BackupTransportService</string>
+    <string name="airplane_mode_toggleable_radios" translatable="false">wifi,bluetooth</string>
 </resources>
