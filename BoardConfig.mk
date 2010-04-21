@@ -10,6 +10,7 @@ TARGET_ARCH_VARIANT := armv7-a
 ARCH_ARM_HAVE_TLS_REGISTER := true
 TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
+TARGET_KERNEL_CONFIG := cyanogen_mahimahi_defconfig
 
 TARGET_NO_BOOTLOADER := true
 TARGET_BOOTLOADER_BOARD_NAME := nexusone
