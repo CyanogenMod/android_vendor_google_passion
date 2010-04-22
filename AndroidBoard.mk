@@ -124,7 +124,15 @@ LOCAL_MODULE := fw_bcm4329.bin
 LOCAL_MODULE_TAGS := user
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(local_target_dir)
-LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
+LOCAL_SRC_FILES := firmware/$(LOCAL_MODULE)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := fw_bcm4329_apsta.bin
+LOCAL_MODULE_TAGS := user
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(local_target_dir)
+LOCAL_SRC_FILES := firmware/$(LOCAL_MODULE)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)

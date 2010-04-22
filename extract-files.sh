@@ -10,7 +10,6 @@ chmod 755 proprietary/parse_radio_log
 
 adb pull /system/etc/firmware/yamato_pfp.fw proprietary/yamato_pfp.fw
 adb pull /system/etc/firmware/default.acdb proprietary/default.acdb
-adb pull /system/etc/firmware/fw_bcm4329.bin proprietary/fw_bcm4329.bin
 adb pull /system/etc/firmware/yamato_pm4.fw proprietary/yamato_pm4.fw
 adb pull /system/etc/firmware/default_france.acdb proprietary/default_france.acdb
 adb pull /system/etc/firmware/default_att.acdb proprietary/default_att.acdb
