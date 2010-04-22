@@ -256,6 +256,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
     $(LOCAL_PATH)/proprietary/libgsl.so:system/lib/libgsl.so \
     $(LOCAL_PATH)/proprietary/libspeech.so:system/lib/libspeech.so \
+    $(LOCAL_PATH)/proprietary/akmd:system/bin/akmd \
     frameworks/base/data/etc/android.hardware.camera.flash-autofocus.xml:system/etc/permissions/android.hardware.camera.flash-autofocus.xml \
     frameworks/base/data/etc/android.hardware.sensor.light.xml:system/etc/permissions/android.hardware.sensor.light.xml \
     frameworks/base/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml \

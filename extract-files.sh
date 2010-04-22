@@ -2,9 +2,8 @@
 
 mkdir -p proprietary
 
-mkdir -p ../../htc/common-open/akmd/proprietary
-adb pull /system/bin/akmd ../../htc/common-open/akmd/proprietary/akmd
-chmod 755 ../../htc/common-open/akmd/proprietary/akmd
+adb pull /system/bin/akmd proprietary/akmd
+chmod 755 proprietary/akmd
 
 adb pull /system/bin/parse_radio_log proprietary/parse_radio_log
 chmod 755 proprietary/parse_radio_log
