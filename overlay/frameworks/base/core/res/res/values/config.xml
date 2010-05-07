@@ -245,4 +245,8 @@
     <!-- Component name of the default wallpaper. This will be ImageWallpaper if not 
          specified -->
     <string name="default_wallpaper_component">com.android.wallpaper/.nexus.NexusWallpaper</string>
+
+    <!-- Use notification light instead of attention light -->
+    <bool name="config_hasIntrusiveLed">true</bool>
+
 </resources>
