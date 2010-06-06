@@ -77,14 +77,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dexopt-flags=m=y \
     net.bt.name=Android \
     ro.config.sync=yes \
-    dalvik.vm.stack-trace-file=/data/anr/traces.txt
-
-ifeq ($(WITH_WINDOWS_MEDIA),true)
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.media.dec.aud.wma.enabled=1 \
-        ro.media.dec.vid.wmv.enabled=1
-else
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.media.dec.aud.wma.enabled=0 \
-        ro.media.dec.vid.wmv.enabled=0
-endif
+    dalvik.vm.stack-trace-file=/data/anr/traces.txt \
+    ro.media.dec.aud.wma.enabled=1 \
+    ro.media.dec.vid.wmv.enabled=1
