@@ -48,9 +48,14 @@ on boot
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 245000
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 998400
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor ondemand
+    write /sys/devices/system/cpu/cpufreq/ondemand/sampling_rate 40000
 
-    setprop ro.ril.fast.dormancy.rule 1
-    setprop ro.ril.fast.dormancy.timeout 2
+    # Wakelock debug
+    write /sys/module/wakelock/parameters/debug_mask 7
+
+    # Fast dormancy settings
+    setprop ro.ril.fd.scron.timeout 3
+    setprop ro.ril.fd.scroff.timeout 4
 
 # compass/accelerometer daemon
 service akmd /system/bin/akmd
